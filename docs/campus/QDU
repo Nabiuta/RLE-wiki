@@ -1,0 +1,50 @@
+---
+title：青岛大学
+author：Nabiuta
+---
+##
+    attributes:
+      label: [青岛大学](https://www.qdu.edu.cn/)(Qingdao University,QDU) 是一所综合性大学，设有34个学院和医学部，有备案本科专业89个，涵盖哲学、经济学、法学、教育学、文学、历史学、理学、工学、医学、管理学、艺术学、交叉学科等12个学科门类。
+    validations:
+      required: true
+  - type: input
+    id: address
+    attributes:
+      label: 学校分为浮山校区（中心校区）和金家岭校区，大多数学院都在浮山校区，金家岭校区只有经济学院，商学院和政管学院四年常驻，部分学院（数院在内）仅大一在金家岭校区，大一下学期期末考试结束一天后开始搬校区（建议叫货拉拉）。
+      -金家岭校区位于：
+      description: 这一部分应当以校区名称位于 [通讯地址](高德地图 POI 链接) 的形式开头。在此应该阐明哪些学生将会进入哪个校区，是按年级分配校区还是按专业分配校区等等。如果某个校区离市区很远，或者交通不便，应当指出。如果学校设有多个校区，在接下来的内容中，请注意你所陈述的是否是所有校区的普遍情况。如果你只了解自己所在的校区的情况，而对其他校区并不了解，应当指出。
+    validations:
+      required: true
+  - type: input
+    id: PE-Military
+    attributes:
+      label:  军训与体育
+      description: 军训部分重点关注：军训是否强制要求剪短头发，军训的时长、强度，军训能否免训或半训等等；体育部分重点关注：体育课是否男女分开，体育课强度、考核难度，是否可以申请降低标准等等。
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: 下面是一些基本生活信息，你可以说有、没有、不了解、部分情况下有（如只有某校区有独立卫浴、医保限部分医院报销、医保转诊才能报销）
+  - type: input
+    id: dormitory
+    attributes:
+      label: 宿舍情况与基础设施
+      description: 宿舍独立卫生间或者独立浴室的情况，公共澡堂可以讲讲私密度情况
+  - type: input
+    id: medicare
+    attributes:
+      label: 医疗资源
+      description: 医疗资源部分包括：校医院能否开具激素检查，能否公费或医保购买 HRT 药物；如果不能，校外的医院能否进行检查与开具药物，能否回校报销，前往校外医院与报销是否方便等等。
+  - type: textarea
+    id: LGBTFriendly
+    attributes:
+      label:  LGBT 友善梗概
+      description: 如果不利于跨性别生存请特别指出。这里可以写一些主观感受，如学校、教师、同学是否对 LGBT 友善等，客观内容包括学校是否有 LGBT 专门的社团组织，是否提供 LGBT 的科普等。大部分学校都有提供心理咨询服务，如有心理咨询的经历，可以讲述心理咨询是否跨性别友善、预约是否容易等等。如果愿意，在此还可以列写一下学校内的跨性别分布情况，但是应特别添加一个小标题来描述。
+  - type: input
+    id: other
+    attributes:
+      label: 其他
+      description: 如果你认为还有其他需要放在 Wiki 上的内容，可以填写在这个小节中，如果有必要，可以单独添加小标题来分段。
+  - type: checkboxes
+    id: license
+    attributes:
